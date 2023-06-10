@@ -1,23 +1,24 @@
 import { footer, header, navbar } from "./header-footer.js";
 import home from "./home.js";
+import menu from "./menu.js";
 import "./styles.css";
-
-let currentPage = home;
 
 const main = () => {
   const main = document.createElement("main");
 
   main.appendChild(navbar());
-
   return main;
 };
 
 const addButtonFunctions = () => {
   const buttons = document.getElementsByClassName('nav-btn');
-
+  let currentPage = "";
+  
   [...buttons].forEach((btn) => {
     btn.addEventListener('click', () => {
       console.log(btn.textContent);
+      currentPage = btn.textContent;
+      renderPage(currentPage);
     })
   })
 }
@@ -36,9 +37,32 @@ const initialRender = () => {
   addButtonFunctions();
 };
 
-const renderPage = () => {
+const renderPage = (page = "Home") => {
+  const main = document.getElementsByTagName('main')[0];
+  
+  while (main.hasChildNodes()) {
+    main.removeChild(main.lastChild);
+  }
 
+  main.appendChild(navbar());
+
+  let button;
+
+  switch(page) {
+    case 'Home': 
+      main.appendChild(home());
+      button = document.getElementById('nav-home');
+      button.classList.add('active');
+      break;
+    case 'Menu':
+      main.appendChild(menu());
+      button = document.getElementById('nav-menu');
+      button.classList.add('active');
+      break;
+  }
+  addButtonFunctions();
 }
 
 
 initialRender();
+renderPage();
