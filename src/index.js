@@ -55,7 +55,7 @@ const renderPage = (page = "Home") => {
       break;
     case "Contact":
       main.appendChild(contact());
-      button = document.getElementById("nav-menu");
+      button = document.getElementById("nav-contact");
       button.classList.add("active");
       break;
   }
