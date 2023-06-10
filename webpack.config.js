@@ -2,20 +2,21 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  mode: 'development',
+  mode: "development",
   entry: {
     index: "./src/index.js",
     home: "./src/home.js",
     menu: "./src/menu.js",
     contact: "./src/contact.js",
+    headerFooter: "./src/header-footer.js",
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   devServer: {
-    static: './dist',
+    static: "./dist",
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Asset, Output, and Development Management",
+      title: "Dev: Restaurant Page",
     }),
   ],
   output: {
@@ -23,7 +24,15 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
   optimization: {
-    runtimeChunk: 'single',
-  }
+    runtimeChunk: "single",
+  },
 };
