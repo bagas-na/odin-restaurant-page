@@ -29,6 +29,7 @@ const navbar = () => {
 
   const contact = document.createElement("li");
   contact.classList.add("nav-btn");
+  contact.id = "nav-contact";
   contact.textContent = "Contact";
 
   list.append(home, menu, contact);
