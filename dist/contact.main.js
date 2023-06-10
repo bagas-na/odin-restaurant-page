@@ -1,18 +1,1 @@
-(self["webpackChunkrestaurant_page"] = self["webpackChunkrestaurant_page"] || []).push([["contact"],{
-
-/***/ "./src/contact.js":
-/*!************************!*\
-  !*** ./src/contact.js ***!
-  \************************/
-/***/ (() => {
-
-
-
-/***/ })
-
-},
-/******/ __webpack_require__ => { // webpackRuntimeModules
-/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./src/contact.js"));
-/******/ }
-]);
+"use strict";(self.webpackChunkrestaurant_page=self.webpackChunkrestaurant_page||[]).push([[631],{637:(t,e,n)=>{n.d(e,{Z:()=>c});const c=()=>{const t=document.createElement("div");t.classList.add("contact");const e=document.createElement("h1");e.textContent="Contact Us";const n=document.createElement("h2");return n.textContent="Get in Touch",t.append(e,n,(()=>{const t=document.createElement("div");return t.classList.add("contact-card"),t.append((()=>{const t=document.createElement("div");t.classList.add("contact-info");const e=document.createElement("h3");e.textContent="Location:";const n=document.createElement("p");n.textContent="123 Main Street, City, State";const c=document.createElement("h3");c.textContent="Telephone:";const a=document.createElement("p");a.textContent="123-456-7890";const o=document.createElement("h3");o.textContent="Email:";const r=document.createElement("p");return r.textContent="info@example.com",t.append(e,n,c,a,o,r),t})(),(()=>{const t=document.createElement("div");t.classList.add("embed-map");const e=document.createElement("iframe");return e.setAttribute("width","600"),e.setAttribute("height","400"),e.setAttribute("style","border:0"),e.setAttribute("loading","lazy"),e.setAttribute("allowfullscreen",""),e.setAttribute("referrerrpolicy","no-referrer-when-downgrade"),e.setAttribute("src","https://www.google.com/maps/embed/v1/place?key=AIzaSyAGtHqF8CGT6Gd6mK8vfaoejPbmYfX2_8s&q=Estancia+Jakarta"),t.appendChild(e),t})()),t})()),t}}},t=>{t(t.s=637)}]);
