@@ -37,6 +37,13 @@ const navbar = () => {
   return navbar;
 };
 
+const main = () => {
+  const main = document.createElement("main");
+
+  main.appendChild(navbar());
+  return main;
+};
+
 const footer = () => {
   const footer = document.createElement("footer");
 
@@ -60,4 +67,5 @@ const footer = () => {
   return footer;
 };
 
-export { footer, header, navbar };
+export { footer, header, main, navbar };
+
