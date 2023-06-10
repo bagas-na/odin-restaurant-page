@@ -2,15 +2,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     index: "./src/index.js",
     home: "./src/home.js",
     menu: "./src/menu.js",
     contact: "./src/contact.js",
-    headerFooter: "./src/header-footer.js",
+    components: "./src/components.js",
   },
-  devtool: "source-map",
+  // devtool: "source-map",
   devServer: {
     static: "./dist",
   },
