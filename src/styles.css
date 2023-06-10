@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poiret+One&family=Red+Hat+Display:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+  background: no-repeat
+    url("https://images.unsplash.com/photo-1558030154-d3605e91d892?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&w=2560&q=60");
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+}
+
+#content {
+  /* position: relative; */
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  font-family: "Dancing Script", cursive;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 0 -10px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Poiret One", cursive;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+}
+
+header h1,
+header h2 {
+  margin-bottom: -5px;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 0 10px;
+  text-align: center;
+}
+
+nav > ul {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-btn {
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+  list-style: none;
+  font-family: "Poiret One", cursive;
+  font-size: 1.2rem;
+  transition: transform 0.05s;
+}
+
+.nav-btn:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  transform: translate(0, 2px);
+}
+
+.nav-btn.active {
+  cursor: pointer;
+  /* border-bottom: 3px solid white; */
+  font-weight: bolder;
+  border-bottom: 3px solid white;
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
+  height: 40px;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+footer p,
+footer a {
+  text-align: center;
+}
+
+main {
+  position: relative;
+}
+
+p.description {
+  font-size: 1.5rem;
+}
+
+table {
+  width: clamp(400px, 50%, 500px);
+  border-collapse: collapse;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  text-indent: 0;
+}
+
+table td {
+  text-align: center;
+}
+
+table td:first-child {
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 10px;
+  /* text-align: center; */
+  border-bottom: 1px solid #ddd;
+}
+
+.home {
+  max-width: 2560px;
+  margin: 0 auto;
+  padding: 2rem max(3rem, 10%);
+  top: 2rem;
+  color: white;
+
+  /* display: none; */
+}
+
+.home h1,
+.home h2 {
+  margin: 15px 0;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  max-width: 950px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* display: none; */
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 350px));
+  grid-template-rows: 4rem 1fr 1fr 4rem 1fr 1fr;
+  column-gap: 25px;
+  row-gap: 15px;
+}
+
+.menu h1 {
+  font-size: 3rem;
+}
+
+.menu h2 {
+  text-align: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#steak {
+  grid-column: span 2;
+  text-align: center;
+}
+
+#poultry,
+#vegetarian {
+  grid-row-start: 4;
+}
+#vegetarian + .menu-item {
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+.menu img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.menu h3,
+.menu p {
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  max-width: 950px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  color: white;
+  text-align: center;
+}
+
+.contact-card {
+  text-align: left;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  
+
+}
+
+p,
+a {
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  padding: 10px 0;
+}
