@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poiret+One&family=Red+Hat+Display:wght@300;400&display=swap');
 
+::-webkit-scrollbar { 
+  display: none; 
+  }
+
 body {
   margin: 0;
   background: no-repeat
