@@ -15,4 +15,4 @@ This project is created for educational purposes as part of The Odin Project, fo
 
 ## How to Use
 
-View the live preview on Github [pages](https://bagas-na.github.io/restaurant-page/).
+View the live preview on Github [pages](https://bagas-na.github.io/odin-restaurant-page/).
